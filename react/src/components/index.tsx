@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>React App</title>
-  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <base href="/">
-</head>
-<body>
-  <div id="root"></div>
-  <!-- Ensure to include the compiled JavaScript bundle -->
-</body>
-</html>
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const App: React.FC = () => {
+  return (
+    <div>
+      <h1>Welcome to the React App</h1>
+      <p>This is a simple React component converted from an AngularJS template.</p>
+    </div>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById('root'));
